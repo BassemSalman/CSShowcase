@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Challenge</title>
+    <style>
+        .first,.second{
+            border-radius: 15px; 
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+        .first{
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        .second{
+            display:block;
+            margin-top: 5px;
+            width: 535px;
+            margin-bottom: 0;
+
+        }
+        .bluebutton{
+            margin-top: 10px;
+            color: white;
+            background-color: steelblue;
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 20px 40px;
+            width: 580px;
+        }
+
+        .request{
+            font-family: Arial;
+            font-size: 35px;
+            margin-bottom:0;
+        }
+
+        .prompt-1,.prompt-2{
+            display: block;
+            width: 400px;
+            padding:8px 10px;
+            font-size: 17px;
+
+            font-family: Arial;
+            margin-top:0;
+            margin-bottom:20px;
+            background-color: buttonface;
+            border:none;
+        }
+        .prompt-1{
+            margin-top: 10px;
+            margin-bottom:5px;
+        }
+        .first-1{
+            border:none;
+            color:white;
+            background-color: black;
+            padding:10px 15px;
+            font-size:15px;
+            cursor: pointer;
+
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .first-1:hover{
+            background-color: white;
+            color:black;
+        }
+
+        .second-2{
+            border:none;
+            padding:10px 15px;
+            font-size:15px;
+            cursor:pointer;
+
+            transition: margin 1s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <input class="first" type="text" placeholder="First name">
+    <input class="first" type="text" placeholder="Last name">
+    <input class="second" type="text" placeholder="Email">
+    <button class="bluebutton">Sign Up</button>
+    <br><br>
+
+    <p class="request">Request a ride now</p>
+    <input class="prompt-1" type="text" placeholder="Enter pickup location">
+    <input class="prompt-2" type="text" placeholder="Enter destination">
+    <button class="first-1">Request now</button>
+    <button class="second-2">Schedule for later</button>
+</body>
+</html>

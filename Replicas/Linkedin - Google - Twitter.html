@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TextBoxes</title>
+    <style>
+        .rounded{
+            border-radius: 7px;
+            font-size: 20px;
+            padding-left: 8px;
+            border-width: 1px;
+        }
+
+        .shadownoborder{
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+            border-radius: 20px;
+            padding: 10px 100px 10px 10px;
+            width: 200px;
+            border:none;
+        }
+
+        .email{
+            margin-top: 3px;
+            width:370px;
+            font-size:17px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .join{
+            border:none;
+            color:white;
+            background-color:steelblue;
+            padding:20px 135px;
+            font-size: 20px;
+            border-radius: 200px;
+            margin-top: 10px;
+            
+        }
+
+        .profilepic{
+            width:50px;
+            height:50px;
+            border-radius:75px;
+            
+            object-fit:cover;
+            object-position: center;
+            vertical-align: middle;
+
+        }
+
+        .whats{
+            border:none;
+            font-style: Arial;
+            font-size: 30px;
+
+            margin-right:0;
+            vertical-align: middle;
+        }
+
+        .tweet{
+            vertical-align: middle;
+            border:none;
+            background-color: steelblue;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+
+            font-weight:bold;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <input class="rounded" type="text" placeholder="Search"><br><br>
+    <input class="shadownoborder" type="text" placeholder="Search Google or type a URL">
+    
+    <br><br><br>
+
+    <p style="font-family:Arial; font-size:15px; margin-bottom:0;">Email</p>
+    <input class="email" type="text">
+    <p style="font-family:Arial; font-size:15px; margin-top:0; margin-bottom:0;">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+    <button class="join">Agree & Join</button>
+    
+    <br><br><br>
+    <div>
+        <img class="profilepic" src="images/channel-2.jpg">
+        <input class="whats" type="text" placeholder="What's happening?">
+        <button class="tweet">Tweet</button>
+    </div>
+
+
+</body>
+</html>

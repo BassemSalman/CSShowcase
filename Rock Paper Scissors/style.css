@@ -1,0 +1,90 @@
+		body {
+			background-color: rgb(25, 25, 25);
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.buttons {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 50px;
+		}
+
+		.choice {
+			padding: 20px 10px;
+			color: white;
+			background: none;
+			border: 2px solid white;
+
+			/* width: 150px; */
+			/* height: 150px; */
+	
+
+			cursor: pointer;
+
+			border-radius: 150px;
+
+			width: 200px;
+			height: 200px;
+		}
+
+		.choice:hover{
+			background: white;
+			color: none;		
+			
+		}
+
+		.title {
+			font-family: Arial;
+			font-size: 50px;
+			font-weight: bold;
+			color: white;
+		}
+
+		.choice img {
+			width: 150px;
+			height: 150px;
+			object-fit:contain;
+			object-position: center;
+			border-radius: 100px;
+		}
+
+		.reset {
+			margin-top: 20px;
+			border:none;
+			margin-left:auto;
+			margin-right:auto;
+			border:none;
+
+			padding: 20px;
+			border-radius: 20px;
+			color: white;
+			font-weight:bold;
+			font-family: Arial, Helvetica, sans-serif;
+
+			background-color: rgb(61, 59, 59);
+			border: 1px solid white;
+			transition: color 0.5s, background-color 0.5s;
+			padding: 35px;
+			border-radius:50px;
+			cursor: pointer;
+		}
+		.reset:hover{
+			color: rgb(61, 59, 59);;
+			background-color:white;
+		}
+		.reset:active{
+			background-color: aqua;
+		}
+
+		p{
+			color:white;
+			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-size: 15px;
+		}

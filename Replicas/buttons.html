@@ -1,0 +1,321 @@
+<!-- hovers, transitions, shadows, simple elements, box model -->
+
+<style>
+
+/* class instead of selector */
+  .subscribe-button{
+    background-color: rgb(200, 0, 0);
+    color: white;  /* text color */
+    border: none; /* remove border ya kbirna */
+    
+    /* dont worry too much, trial and error
+    height: 35px; 
+    width: 105px; */
+
+
+    padding: 10px 20px;
+
+
+    /* rounded corner, the higher the more round*/
+    border-radius: 2px;
+
+    /* mouse cursor when above it */
+    cursor: pointer;
+
+    /* ta nkhale l join button yzih shwy */
+    margin-right: 8px;
+
+
+     /* transition betweeen opacities w pseudo classes*/
+      transition: opacity 0.15s;
+      /* transition: what howlong, even active*/
+  }   
+
+  /* pseudo class hover */
+  .subscribe-button:hover{
+    /* how see through html element is KELLO 0-1 wrt to l element*/
+    opacity: 0.75;
+    /* background-color: blue; */
+  }
+
+  /* on click pseudo class */
+  .subscribe-button:active{
+    opacity: 0.5;
+  }
+
+
+  .join-button{
+    /* default is white */
+    background-color: white;
+  
+    /* hek */ 
+    border-color: rgb(41,118,211);
+ 
+    /* since by default, color not homogenous */
+    border-style: solid;
+
+    /* da3afne shwy */
+    border-width: 1px;
+
+    color:rgb(41,118,211);
+
+    height: 36px;
+    width: 60px;
+
+    cursor: pointer;
+
+  /* transistion should be in class not pseudoclass since no transition at all would be in class wadha */
+    /* need transition for both bg and text color */
+    transition: background-color 1s, 
+     color 1s; 
+  }
+
+  /* switch text and background color on hover */
+  .join-button:hover{
+    background-color: rgb(41,118,211);
+    color: white;
+  }
+
+  .join-button:active{
+    /* wrt to current state l huwe color w batikh */
+    opacity: 0.7;
+  }
+
+
+/* copying by eye from other design */
+  .tweet-button{
+    background-color: rgb(2,137,255);
+    color: white;
+    border: none;
+
+    height:36px;
+    width: 70px;
+
+    /* start mnl wate w tlu3 */
+    /* usually  height or width = lower to be round*/
+    border-radius:36px;
+
+    font-weight: bold;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    margin-left: 8px;
+
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover{
+    /* horizontal=right vertical=down blur=10px msln  */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15); 
+    /* natural => arib w blurry w opacity is alile */
+    /* a is l opacity/ seethrough=opacity */
+  }
+/* alone:  */
+
+  .uber-button{
+    /* black default */
+    color:white;  
+    background-color: black;
+    border:none;
+
+    height: 35px;
+    width: 100px;
+
+    cursor: pointer;
+
+    /* font-size: 15px; */
+    transition: opacity 0.15s;
+  }
+  .uber-button:hover{
+    opacity: 0.75;
+  }
+
+  .amazon-button{
+    background-color: rgb(255,216,20);
+    
+    width:150px;
+    height:30px;
+
+    border-radius:35px;
+    border:none;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+  }
+  .amazon-button:hover{
+    background-color: rgb(216, 184, 23);
+  }
+
+  .github-button{
+    color: white;
+    background-color: rgb(46,164,79);
+    font-weight: bold;
+
+    height: 30px;
+    width: 80px;
+
+    border: none;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition: box-shadow 0.3s;
+  }
+  .github-button:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
+
+  .bootstrap-button-1{
+    background-color: rgb(121,82,179);
+    color: white;
+    border: none;
+
+    height: 35px;
+    width: 100px;
+
+    border-radius: 5px;
+    cursor:pointer;
+
+    transition: background-color 0.3s;
+  }
+  .bootstrap-button-1:hover{
+    background-color: rgb(96, 62, 147);
+  }
+
+  .bootstrap-button-2{
+    color: rgb(108,117,125);
+    border-color: rgb(108, 117, 125);
+    border-width: 1px;
+    background-color: white;
+
+    font-weight: bold;
+
+    height: 35px;
+    width: 100px;
+
+    border-radius: 5px;
+    cursor:pointer;
+
+    transition: background-color 0.4s, 
+      color 0.4s;
+  }
+  .bootstrap-button-2:hover{
+    background-color: rgb(108,117,125);
+    color: white;
+  }
+
+  .bootstrap{
+    margin-top: 10px;
+  } 
+
+  .linkedin{
+    margin-top: 10px;
+  }
+
+  .linkedin-button-1{
+    background-color: rgb(10,102,194);
+    color: white;
+    font-weight: bold;
+
+    height: 40px;
+    width: 200px;
+    /* font-size: 12px; */
+
+    /* ad l width */
+    border: none;
+    border-radius: 35px; 
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+  }
+  .linkedin-button-1:hover{
+    background-color: rgb(7, 74, 142);
+  }
+
+  .linkedin-button-2{
+    background-color: white;
+    color: rgb(10,102,194);
+
+    width: 60px;
+    height: 35px;
+    border-width: 1.5px;
+    border-color: rgb(10,102,194);
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s,
+      border-width 0.3s;
+  }
+
+  .linkedin-button-2:hover{
+    background-color: rgb(10,102,194, 0.3);
+    border-width: 32.5x;
+  }
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lets do this ba2a</title>
+</head>
+<body>
+
+<!-- classes are there to label html  -->
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<!-- general technique: style elements one by one -->
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
+
+
+<!-- exercise -->
+
+<button class="uber-button">
+  Request now
+</button>
+
+<button class="amazon-button">
+  Add to Cart
+</button>
+
+<button class="github-button">
+  Sign up
+</button>
+
+<div class="bootstrap">
+  <button class="bootstrap-button-1">
+    Get started
+  </button>
+
+  <button class="bootstrap-button-2">
+    Download
+  </button>
+</div>
+
+<div class="linkedin">
+  <button class="linkedin-button-1">
+    Apply on company website
+  </button>
+  <button class="linkedin-button-2">
+    Save
+  </button>
+</div>
+
+
+</body>
+</html>
